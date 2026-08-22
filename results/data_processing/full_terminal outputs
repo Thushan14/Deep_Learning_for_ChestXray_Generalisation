@@ -1,0 +1,685 @@
+PS D:\uni\Research> mkdir ChestXrayProject
+
+
+    Directory: D:\uni\Research
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+d-----         8/22/2026   4:27 PM                ChestXrayProject     
+
+
+PS D:\uni\Research> cd ChestXrayProject
+PS D:\uni\Research\ChestXrayProject> 
+PS D:\uni\Research\ChestXrayProject> mkdir data
+
+
+    Directory: D:\uni\Research\ChestXrayProject
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+d-----         8/22/2026   4:27 PM                data                 
+
+
+PS D:\uni\Research\ChestXrayProject> mkdir data\images
+
+
+    Directory: D:\uni\Research\ChestXrayProject\data
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+d-----         8/22/2026   4:27 PM                images               
+
+
+PS D:\uni\Research\ChestXrayProject> mkdir src
+
+
+    Directory: D:\uni\Research\ChestXrayProject
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+d-----         8/22/2026   4:27 PM                src                  
+
+
+PS D:\uni\Research\ChestXrayProject> 
+PS D:\uni\Research\ChestXrayProject> New-Item src\prepare_data.py -ItemType File
+
+
+    Directory: D:\uni\Research\ChestXrayProject\src
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+-a----         8/22/2026   4:27 PM              0 prepare_data.py      
+
+
+PS D:\uni\Research\ChestXrayProject> New-Item src\split_data.py -ItemType File
+
+
+    Directory: D:\uni\Research\ChestXrayProject\src
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+-a----         8/22/2026   4:27 PM              0 split_data.py        
+
+
+PS D:\uni\Research\ChestXrayProject> New-Item src\check_data.py -ItemType File
+
+
+    Directory: D:\uni\Research\ChestXrayProject\src
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+-a----         8/22/2026   4:27 PM              0 check_data.py        
+
+
+PS D:\uni\Research\ChestXrayProject> New-Item requirements.txt -ItemType Filemkdir ChestXrayProject
+>> cd ChestXrayProject
+>> 
+>> mkdir data
+>> mkdir data\images
+>> mkdir src
+>> 
+>> New-Item src\prepare_data.py -ItemType File
+>> New-Item src\split_data.py -ItemType File
+>> New-Item src\check_data.py -ItemType File
+>> New-Item requirements.txt -ItemType File
+New-Item : A positional parameter cannot be found that accepts 
+argument 'ChestXrayProject'.
+At line:1 char:1
++ New-Item requirements.txt -ItemType Filemkdir ChestXrayProject
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], Paramet 
+   erBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.Po 
+   werShell.Commands.NewItemCommand
+ 
+cd : Cannot find path 
+'D:\uni\Research\ChestXrayProject\ChestXrayProject' because it does 
+not exist.
+At line:2 char:1
++ cd ChestXrayProject
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\uni\Research...hestX 
+   rayProject:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Comman 
+   ds.SetLocationCommand
+ 
+mkdir : An item with the specified name 
+D:\uni\Research\ChestXrayProject\data already exists.
+At line:4 char:1
++ mkdir data
++ ~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (D:\uni\Research\ChestXr 
+   ayProject\data:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Comm 
+   ands.NewItemCommand
+ 
+mkdir : An item with the specified name 
+D:\uni\Research\ChestXrayProject\data\images already exists.
+At line:5 char:1
++ mkdir data\images
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (D:\uni\Research...ect\d 
+   ata\images:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Comm 
+   ands.NewItemCommand
+ 
+mkdir : An item with the specified name 
+D:\uni\Research\ChestXrayProject\src already exists.
+At line:6 char:1
++ mkdir src
++ ~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (D:\uni\Research\ChestXr 
+   ayProject\src:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Comm 
+   ands.NewItemCommand
+ 
+New-Item : The file 
+'D:\uni\Research\ChestXrayProject\src\prepare_data.py' already exists.
+At line:8 char:1
++ New-Item src\prepare_data.py -ItemType File
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\uni\Research...prepare_d 
+   ata.py:String) [New-Item], IOException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Comm 
+   ands.NewItemCommand
+ 
+New-Item : The file 
+'D:\uni\Research\ChestXrayProject\src\split_data.py' already exists.
+At line:9 char:1
++ New-Item src\split_data.py -ItemType File
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\uni\Research...c\split_d 
+   ata.py:String) [New-Item], IOException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Comm 
+   ands.NewItemCommand
+ 
+New-Item : The file 
+'D:\uni\Research\ChestXrayProject\src\check_data.py' already exists.
+At line:10 char:1
++ New-Item src\check_data.py -ItemType File
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (D:\uni\Research...c\check_d 
+   ata.py:String) [New-Item], IOException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Comm 
+   ands.NewItemCommand
+ 
+
+
+    Directory: D:\uni\Research\ChestXrayProject
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+-a----         8/22/2026   4:38 PM              0 requirements.txt     
+
+
+PS D:\uni\Research\ChestXrayProject> pwd
+
+Path                            
+----                            
+D:\uni\Research\ChestXrayProject
+
+
+PS D:\uni\Research\ChestXrayProject> dir
+
+
+    Directory: D:\uni\Research\ChestXrayProject
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+d-----         8/22/2026   4:27 PM                data                 
+d-----         8/22/2026   4:27 PM                src                  
+-a----         8/22/2026   4:38 PM              0 requirements.txt     
+
+
+PS D:\uni\Research\ChestXrayProject> dir data
+
+
+    Directory: D:\uni\Research\ChestXrayProject\data
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+d-----         8/22/2026   4:27 PM                images               
+
+
+PS D:\uni\Research\ChestXrayProject> (Get-ChildItem data\images -File).Count
+0
+PS D:\uni\Research\ChestXrayProject> tar -xf data\images_001.tar.gz -C data
+tar.exe: Error opening archive: Failed to open 'data\images_001.tar.gz'
+PS D:\uni\Research\ChestXrayProject> Move-Item .\images_001.tar.gz .\data\
+Move-Item : Cannot find path 
+'D:\uni\Research\ChestXrayProject\images_001.tar.gz' because it does 
+not exist.
+At line:1 char:1
++ Move-Item .\images_001.tar.gz .\data\
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\uni\Research...ages_ 
+   001.tar.gz:String) [Move-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Comman 
+   ds.MoveItemCommand
+ 
+PS D:\uni\Research\ChestXrayProject> Get-ChildItem -Path . -Recurse -Filter *.tar.gz
+
+
+    Directory: D:\uni\Research\ChestXrayProject\data\images
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+-a----          6/3/2026   4:11 PM     2008470987 images_001.tar.gz    
+-a----          6/3/2026   9:10 PM     3952623504 images_002.tar.gz    
+
+
+PS D:\uni\Research\ChestXrayProject> dir
+
+
+    Directory: D:\uni\Research\ChestXrayProject
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+d-----         8/22/2026   4:54 PM                data                 
+d-----         8/22/2026   4:27 PM                src                  
+-a----         8/22/2026   4:38 PM              0 requirements.txt     
+
+
+PS D:\uni\Research\ChestXrayProject> tree
+Folder PATH listing for volume New Volume
+Volume serial number is 0000004E 7EBE:035B
+D:.
+├───data
+│   └───images
+└───src
+PS D:\uni\Research\ChestXrayProject> tree /f
+Folder PATH listing for volume New Volume
+Volume serial number is 00000020 7EBE:035B
+D:.
+│   requirements.txt
+│   
+├───data
+│   │   Data_Entry_2017_v2020.csv
+│   │   images_001.tar.gz
+│   │   images_002.tar.gz
+│   │   
+│   └───images
+└───src
+        check_data.py
+        prepare_data.py
+        split_data.py
+        
+PS D:\uni\Research\ChestXrayProject> (Get-ChildItem .\data\images -File).Count
+0
+PS D:\uni\Research\ChestXrayProject> tar -xzf .\data\images_001.tar.gz -C .\data
+PS D:\uni\Research\ChestXrayProject> tar -xzf .\data\images_002.tar.gz -C .\data
+PS D:\uni\Research\ChestXrayProject> (Get-ChildItem .\data\images -Filter *.png -File).Count
+14999
+PS D:\uni\Research\ChestXrayProject> py -3.12 -m venv venv
+>> .\venv\Scripts\Activate.ps1
+(venv) PS D:\uni\Research\ChestXrayProject> pip install pandas numpy scikit-learn
+Collecting pandas
+  Downloading pandas-3.0.5-cp312-cp312-win_amd64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.5.2-cp312-cp312-win_amd64.whl.metadata (6.6 kB)
+Collecting scikit-learn
+  Using cached scikit_learn-1.9.0-cp312-cp312-win_amd64.whl.metadata (11 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting tzdata (from pandas)
+  Downloading tzdata-2026.3-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting scipy>=1.10.0 (from scikit-learn)
+  Downloading scipy-1.18.1-cp312-cp312-win_amd64.whl.metadata (61 kB)
+Collecting joblib>=1.4.0 (from scikit-learn)
+  Using cached joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting narwhals>=2.0.1 (from scikit-learn)
+  Downloading narwhals-2.25.0-py3-none-any.whl.metadata (15 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn)
+  Using cached threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading pandas-3.0.5-cp312-cp312-win_amd64.whl (9.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.8/9.8 MB 2.9 MB/s eta 0:00:00
+Downloading numpy-2.5.2-cp312-cp312-win_amd64.whl (12.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.5/12.5 MB 2.9 MB/s eta 0:00:00
+Using cached scikit_learn-1.9.0-cp312-cp312-win_amd64.whl (8.2 MB)
+Using cached joblib-1.5.3-py3-none-any.whl (309 kB)
+Downloading narwhals-2.25.0-py3-none-any.whl (467 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading scipy-1.18.1-cp312-cp312-win_amd64.whl (36.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 36.7/36.7 MB 3.0 MB/s eta 0:00:00
+Using cached threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2026.3-py2.py3-none-any.whl (348 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: tzdata, threadpoolctl, six, numpy, narwhals, joblib, scipy, python-dateutil, scikit-learn, pandas
+Successfully installed joblib-1.5.3 narwhals-2.25.0 numpy-2.5.2 pandas-3.0.5 python-dateutil-2.9.0.post0 scikit-learn-1.9.0 scipy-1.18.1 six-1.17.0 threadpoolctl-3.6.0 tzdata-2026.3
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(venv) PS D:\uni\Research\ChestXrayProject> /d:/uni/Research/.venv/Scripts/python.exe -m pip install pandas numpy scikit-learn
+/d:/uni/Research/.venv/Scripts/python.exe : The term 
+'/d:/uni/Research/.venv/Scripts/python.exe' is not recognized as the 
+name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the 
+path is correct and try again.
+At line:1 char:1
++ /d:/uni/Research/.venv/Scripts/python.exe -m pip install pandas 
+numpy ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (/d:/uni/Researc...ipts/ 
+   python.exe:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+(venv) PS D:\uni\Research\ChestXrayProject> python --version
+Python 3.12.10
+(venv) PS D:\uni\Research\ChestXrayProject> python -c "import pandas, numpy, sklearn; print('Everything is working!')"
+Everything is working!
+(venv) PS D:\uni\Research\ChestXrayProject> New-Item .\src\data_utils.py -ItemType File
+
+
+    Directory: D:\uni\Research\ChestXrayProject\src
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+-a----         8/22/2026   5:29 PM              0 data_utils.py        
+
+
+(venv) PS D:\uni\Research\ChestXrayProject> python src\prepare_data.py
+
+--- NIH Chest X-ray Data Preparation ---
+
+Total rows in original CSV: 112120
+PNG images available locally: 14999
+Matching CSV records: 14999
+
+Binary label distribution:
+binary_label
+0    8753
+1    6246
+Name: count, dtype: int64
+
+Disease distribution:
+Atelectasis: 1350
+Cardiomegaly: 396
+Effusion: 1382
+Infiltration: 2260
+Mass: 470
+Nodule: 666
+Pneumonia: 184
+Pneumothorax: 670
+Consolidation: 557
+Edema: 196
+Emphysema: 318
+Fibrosis: 379
+Pleural_Thickening: 468
+Hernia: 46
+
+Processed dataset saved to:
+data/available_data.csv
+
+Final number of images: 14999
+
+Data preparation completed successfully.
+(venv) PS D:\uni\Research\ChestXrayProject> python src\split_data.py
+
+--- Dataset Splitting ---
+
+Total images: 14999
+Total patients: 3923
+
+Training images: 10699
+Validation images: 2179
+Testing images: 2121
+
+Training patients: 2746
+Validation patients: 588
+Testing patients: 589
+
+Files saved:
+data/train.csv
+data/validation.csv
+data/test.csv
+
+Dataset splitting completed successfully.
+(venv) PS D:\uni\Research\ChestXrayProject> python src\check_data.py
+
+--- Patient Overlap Check ---
+Train / Validation overlap: 0
+Train / Test overlap: 0
+Validation / Test overlap: 0
+
+PASS: No patient-level data leakage detected.
+
+--- Training Set ---
+Total images: 10699
+Normal images: 6236
+Abnormal images: 4463
+Normal percentage: 58.29 %
+Abnormal percentage: 41.71 %
+
+--- Validation Set ---
+Total images: 2179
+Normal images: 1257
+Abnormal images: 922
+Normal percentage: 57.69 %
+Abnormal percentage: 42.31 %
+
+--- Testing Set ---
+Total images: 2121
+Normal images: 1260
+Abnormal images: 861
+Normal percentage: 59.41 %
+Abnormal percentage: 40.59 %
+(venv) PS D:\uni\Research\ChestXrayProject> python src\dataset_summary.py
+
+--- Training Summary ---
+Images: 10699
+Patients: 2746
+Normal: 6236
+Abnormal: 4463
+
+Disease counts:
+Atelectasis: 982
+Cardiomegaly: 266
+Effusion: 984
+Infiltration: 1610
+Mass: 334
+Nodule: 443
+Pneumonia: 122
+Pneumothorax: 464
+Consolidation: 412
+Edema: 127
+Emphysema: 225
+Fibrosis: 272
+Pleural_Thickening: 318
+Hernia: 30
+
+--- Validation Summary ---
+Images: 2179
+Patients: 588
+Normal: 1257
+Abnormal: 922
+
+Disease counts:
+Atelectasis: 208
+Cardiomegaly: 79
+Effusion: 217
+Infiltration: 344
+Mass: 53
+Nodule: 117
+Pneumonia: 29
+Pneumothorax: 89
+Consolidation: 73
+Edema: 54
+Emphysema: 34
+Fibrosis: 65
+Pleural_Thickening: 66
+Hernia: 8
+
+--- Testing Summary ---
+Images: 2121
+Patients: 589
+Normal: 1260
+Abnormal: 861
+
+Disease counts:
+Atelectasis: 160
+Cardiomegaly: 51
+Effusion: 181
+Infiltration: 306
+Mass: 83
+Nodule: 106
+Pneumonia: 33
+Pneumothorax: 117
+Consolidation: 72
+Edema: 15
+Emphysema: 59
+Fibrosis: 42
+Pleural_Thickening: 84
+Hernia: 8
+(venv) PS D:\uni\Research\ChestXrayProject> src/final_data_processing.py
+
+src/final_data_processing.py : The term 'src/final_data_processing.py' 
+is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was 
+included, verify that the path is correct and try again.
+At line:1 char:1
++ src/final_data_processing.py
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (src/final_data_processi 
+   ng.py:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+(venv) PS D:\uni\Research\ChestXrayProject> pip install matplotlib
+Collecting matplotlib
+  Downloading matplotlib-3.11.1-cp312-cp312-win_amd64.whl.metadata (80 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Using cached contourpy-1.3.3-cp312-cp312-win_amd64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib)
+  Using cached fonttools-4.63.0-cp312-cp312-win_amd64.whl.metadata (121 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Using cached kiwisolver-1.5.0-cp312-cp312-win_amd64.whl.metadata (5.2 kB)
+Requirement already satisfied: numpy>=1.25 in d:\uni\research\chestxrayproject\venv\lib\site-packages (from matplotlib) (2.5.2)
+Collecting packaging>=20.0 (from matplotlib)
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow>=9 (from matplotlib)
+  Downloading pillow-12.3.0-cp312-cp312-win_amd64.whl.metadata (9.3 kB)
+Collecting pyparsing>=3 (from matplotlib)
+  Using cached pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Requirement already satisfied: python-dateutil>=2.7 in d:\uni\research\chestxrayproject\venv\lib\site-packages (from matplotlib) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in d:\uni\research\chestxrayproject\venv\lib\site-packages (from python-dateutil>=2.7->matplotlib) (1.17.0)
+Downloading matplotlib-3.11.1-cp312-cp312-win_amd64.whl (9.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 3.3 MB/s eta 0:00:00
+Using cached contourpy-1.3.3-cp312-cp312-win_amd64.whl (226 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached fonttools-4.63.0-cp312-cp312-win_amd64.whl (2.3 MB)
+Using cached kiwisolver-1.5.0-cp312-cp312-win_amd64.whl (73 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pillow-12.3.0-cp312-cp312-win_amd64.whl (7.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.2/7.2 MB 3.4 MB/s eta 0:00:00
+Using cached pyparsing-3.3.2-py3-none-any.whl (122 kB)
+Installing collected packages: pyparsing, pillow, packaging, kiwisolver, fonttools, cycler, contourpy, matplotlib
+Successfully installed contourpy-1.3.3 cycler-0.12.1 fonttools-4.63.0 kiwisolver-1.5.0 matplotlib-3.11.1 packaging-26.3 pillow-12.3.0 pyparsing-3.3.2
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(venv) PS D:\uni\Research\ChestXrayProject> mkdir results
+
+
+    Directory: D:\uni\Research\ChestXrayProject
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+d-----         8/22/2026   5:54 PM                results              
+
+
+(venv) PS D:\uni\Research\ChestXrayProject> mkdir results\data_processing
+
+
+    Directory: D:\uni\Research\ChestXrayProject\results
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+d-----         8/22/2026   5:54 PM                data_processing      
+
+
+(venv) PS D:\uni\Research\ChestXrayProject> New-Item .\src\final_data_processing.py -ItemType File
+
+
+    Directory: D:\uni\Research\ChestXrayProject\src
+
+
+Mode                 LastWriteTime         Length Name                 
+----                 -------------         ------ ----                 
+-a----         8/22/2026   5:56 PM              0 final_data_processing
+                                                  .py                  
+
+
+(venv) PS D:\uni\Research\ChestXrayProject> python src\final_data_processing.py
+
+====================================
+ FINAL DATA PROCESSING VALIDATION
+====================================
+
+--- Loading Processed Datasets ---
+
+Training images: 10699
+Validation images: 2179
+Testing images: 2121
+
+--- Patient Leakage Check ---
+Train / Validation overlap: 0
+Train / Test overlap: 0
+Validation / Test overlap: 0
+PASS: No patient-level data leakage.
+
+--- Missing Image Check ---
+Training missing images: 0
+Validation missing images: 0
+Testing missing images: 0
+
+--- Duplicate Check ---
+Training duplicate image records: 0
+Validation duplicate image records: 0
+Testing duplicate image records: 0
+
+--- Binary Label Check ---
+Training binary labels: PASS
+Validation binary labels: PASS
+Testing binary labels: PASS
+
+--- Disease Column Check ---
+PASS: All 14 disease columns are available.
+
+--- Disease Representation Check ---
+Atelectasis: Train=982, Validation=208, Test=160
+Cardiomegaly: Train=266, Validation=79, Test=51
+Effusion: Train=984, Validation=217, Test=181
+Infiltration: Train=1610, Validation=344, Test=306
+Mass: Train=334, Validation=53, Test=83
+Nodule: Train=443, Validation=117, Test=106
+Pneumonia: Train=122, Validation=29, Test=33
+Pneumothorax: Train=464, Validation=89, Test=117
+Consolidation: Train=412, Validation=73, Test=72
+Edema: Train=127, Validation=54, Test=15
+Emphysema: Train=225, Validation=34, Test=59
+Fibrosis: Train=272, Validation=65, Test=42
+Pleural_Thickening: Train=318, Validation=66, Test=84
+Hernia: Train=30, Validation=8, Test=8
+
+PASS: Every disease appears in all three datasets.
+
+--- Creating Dataset Summary ---
+      Dataset  Images  ...  Normal_Percentage  Abnormal_Percentage
+0    Training   10699  ...              58.29                41.71
+1  Validation    2179  ...              57.69                42.31
+2     Testing    2121  ...              59.41                40.59
+
+[3 rows x 7 columns]
+
+Saved:
+results/data_processing\dataset_summary.csv
+
+--- Creating Disease Distribution ---
+               Disease  Training  Validation  Testing
+0          Atelectasis       982         208      160
+1         Cardiomegaly       266          79       51
+2             Effusion       984         217      181
+3         Infiltration      1610         344      306
+4                 Mass       334          53       83
+5               Nodule       443         117      106
+6            Pneumonia       122          29       33
+7         Pneumothorax       464          89      117
+8        Consolidation       412          73       72
+9                Edema       127          54       15
+10           Emphysema       225          34       59
+11            Fibrosis       272          65       42
+12  Pleural_Thickening       318          66       84
+13              Hernia        30           8        8
+
+Saved:
+results/data_processing\disease_distribution.csv
+
+Saved:
+results/data_processing\binary_class_distribution.png
+Saved:
+results/data_processing\disease_distribution.png
+
+====================================
+PASS: DATA PROCESSING COMPLETE
+====================================
+
+(venv) PS D:\uni\Research\ChestXrayProject> python src\final_data_processing.py > results\data_processing\terminal_output.txt
+(venv) PS D:\uni\Research\ChestXrayProject> 

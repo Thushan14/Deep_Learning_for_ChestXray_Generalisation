@@ -1,0 +1,4 @@
+Dataset,Images,Patients,Normal,Abnormal,Normal_Percentage,Abnormal_Percentage
+Training,10699,2746,6236,4463,58.29,41.71
+Validation,2179,588,1257,922,57.69,42.31
+Testing,2121,589,1260,861,59.41,40.59

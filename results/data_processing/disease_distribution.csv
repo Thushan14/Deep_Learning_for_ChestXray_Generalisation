@@ -1,0 +1,15 @@
+Disease,Training,Validation,Testing
+Atelectasis,982,208,160
+Cardiomegaly,266,79,51
+Effusion,984,217,181
+Infiltration,1610,344,306
+Mass,334,53,83
+Nodule,443,117,106
+Pneumonia,122,29,33
+Pneumothorax,464,89,117
+Consolidation,412,73,72
+Edema,127,54,15
+Emphysema,225,34,59
+Fibrosis,272,65,42
+Pleural_Thickening,318,66,84
+Hernia,30,8,8
