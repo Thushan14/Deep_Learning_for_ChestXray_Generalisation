@@ -96,3 +96,18 @@ d-----         9/27/2026   7:40 PM                docs
 (venv) git status
 
 ]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) git add results/terminal_logs/
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) git status
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) git commit -m "Complete unseen disease experiments and model comparison"
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) git push origin main
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) git status
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
