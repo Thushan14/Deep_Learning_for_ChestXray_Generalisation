@@ -1,0 +1,15 @@
+Disease,Train_Total,Train_Single,Train_Multi,Validation_Total,Validation_Single,Validation_Multi,Test_Total,Test_Single,Test_Multi
+Atelectasis,982,414,568,208,82,126,160,61,99
+Cardiomegaly,266,115,151,79,30,49,51,18,33
+Effusion,984,360,624,217,51,166,181,54,127
+Infiltration,1610,824,786,344,165,179,306,147,159
+Mass,334,122,212,53,21,32,83,32,51
+Nodule,443,202,241,117,56,61,106,63,43
+Pneumonia,122,37,85,29,9,20,33,6,27
+Pneumothorax,464,265,199,89,36,53,117,54,63
+Consolidation,412,118,294,73,16,57,72,23,49
+Edema,127,36,91,54,10,44,15,3,12
+Emphysema,225,108,117,34,12,22,59,14,45
+Fibrosis,272,143,129,65,37,28,42,24,18
+Pleural_Thickening,318,130,188,66,27,39,84,33,51
+Hernia,30,17,13,8,6,2,8,5,3

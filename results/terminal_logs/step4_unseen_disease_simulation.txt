@@ -1,0 +1,140 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260910170420
+Username: THUSHANDESILVA\pamod
+RunAs User: THUSHANDESILVA\pamod
+Configuration Name: 
+Machine: THUSHANDESILVA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "d:\New folder\Microsoft VS Code\e4c7e7b1d6\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 39560
+PSVersion: 5.1.26100.8655
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8655
+BuildVersion: 10.0.26100.8655
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is results\terminal_logs\step4_unseen_disease_simulation.txt
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\create_unseen_datasets.py
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python -c "import torch, torchvision; print('PyTorch:', torch.__version__); print('Torchvision:', torchvision.__version__); print('CUDA:', torch.cuda.is_available())"
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) nvidia-smi
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+]633;D]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python -m pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu129
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python -c "import torch, torchvision; print('PyTorch:', torch.__version__); print('Torchvision:', torchvision.__version__); print('CUDA available:', torch.cuda.is_available()); print('GPU:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'No GPU')"
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) Start-Transcript -Path "results\terminal_logs\step5_model_setup.txt"
+Transcript started, output file is results\terminal_logs\step5_model_setup.txt
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\model_setup.py
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) Stop-Transcript
+Transcript stopped, output file is D:\uni\Research\ChestXrayProject\results\terminal_logs\step5_model_setup.txt
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) Start-Transcript -Path "results\terminal_logs\step6_training_pipeline.txt"
+Transcript started, output file is results\terminal_logs\step6_training_pipeline.txt
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\dataloaders.py
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) Stop-Transcript
+Transcript stopped, output file is D:\uni\Research\ChestXrayProject\results\terminal_logs\step6_training_pipeline.txt
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\visualize_data.py
+
+(venv) TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) Start-Transcript -Path "results\terminal_logs\step7_baseline_training.txt"
+Transcript started, output file is results\terminal_logs\step7_baseline_training.txt
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\train_baseline.py
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) Start-Transcript -Path "results\terminal_logs\step8_atelectasis_training.txt"
+Transcript started, output file is results\terminal_logs\step8_atelectasis_training.txt
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\train_unseen.py --disease atelectasis
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\train_unseen.py --disease effusion
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\train_unseen.py --disease pneumonia
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\train_unseen.py --disease pneumothorax
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) Stop-Transcript
+Transcript stopped, output file is D:\uni\Research\ChestXrayProject\results\terminal_logs\step8_atelectasis_training.txt
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) Start-Transcript -Path "results\terminal_logs\step9_unseen_testing.txt"
+Transcript started, output file is results\terminal_logs\step9_unseen_testing.txt
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\test_unseen.py
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) Stop-Transcript
+Transcript stopped, output file is D:\uni\Research\ChestXrayProject\results\terminal_logs\step9_unseen_testing.txt
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) Start-Transcript -Path "results\terminal_logs\step10_atelectasis_disease_specific.txt"
+Transcript started, output file is results\terminal_logs\step10_atelectasis_disease_specific.txt
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\train_disease_specific.py --disease atelectasis
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\train_disease_specific.py --disease effusion
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\train_disease_specific.py --disease pneumonia
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\train_disease_specific.py --disease pneumothorax
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) Stop-Transcript
+Transcript stopped, output file is D:\uni\Research\ChestXrayProject\results\terminal_logs\step10_atelectasis_disease_specific.txt
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) Start-Transcript -Path "results\terminal_logs\step10_model_comparison.txt"
+Transcript started, output file is results\terminal_logs\step10_model_comparison.txt
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) python src\compare_models.py
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) mkdir docs
+
+
+    Directory: D:\uni\Research\ChestXrayProject
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/27/2026   7:40 PM                docs
+
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) git status
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) git restore results/23
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) git add .
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B
+(venv) git status
+
+]633;D;0]633;A]633;P;Cwd=D:\x5cuni\x5cResearch\x5cChestXrayProjectPS D:\uni\Research\ChestXrayProject> ]633;B

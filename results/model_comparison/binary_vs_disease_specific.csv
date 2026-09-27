@@ -1,0 +1,9 @@
+Disease,Model,Binary_Total,Binary_Abnormal,Binary_Normal,Binary_Detection_Rate,Disease_Specific_Total,Disease_Specific_Abnormal,Disease_Specific_Normal,Disease_Specific_Detection_Rate,Average_Max_Known_Disease_Probability,Detection_Rate_Difference,Better_Approach
+Atelectasis,DenseNet121,160,68,92,42.5,160,155,5,96.875,0.82275665,-54.375,Disease-Specific
+Atelectasis,ResNet50,160,50,110,31.25,160,137,23,85.625,0.7041174,-54.375,Disease-Specific
+Effusion,DenseNet121,181,93,88,51.38121546961326,181,181,0,100.0,0.797598,-48.61878453038674,Disease-Specific
+Effusion,ResNet50,181,76,105,41.988950276243095,181,164,17,90.60773480662984,0.6851801,-48.61878453038674,Disease-Specific
+Pneumonia,DenseNet121,33,24,9,72.72727272727273,33,32,1,96.96969696969697,0.7875108,-24.242424242424235,Disease-Specific
+Pneumonia,ResNet50,33,25,8,75.75757575757575,33,32,1,96.96969696969697,0.73809767,-21.212121212121218,Disease-Specific
+Pneumothorax,DenseNet121,117,65,52,55.55555555555556,117,115,2,98.29059829059828,0.8267839,-42.735042735042725,Disease-Specific
+Pneumothorax,ResNet50,117,38,79,32.47863247863248,117,116,1,99.14529914529915,0.79305685,-66.66666666666667,Disease-Specific

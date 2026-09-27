@@ -15,6 +15,9 @@ data/images/
 # Compressed datasets
 data/*.tar.gz
 
+# Original NIH metadata
+data/Data_Entry_2017_v2020.csv
+
 # Trained models
 models/
 *.pth
